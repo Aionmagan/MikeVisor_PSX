@@ -1,0 +1,5 @@
+@RSD940102
+PLY=diadis.ply
+MAT=diadis.mat
+NTEX=1
+TEX[0]=disabled.tim

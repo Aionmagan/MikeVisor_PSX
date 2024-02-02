@@ -1,0 +1,6 @@
+@RSD940102
+PLY=lv5.ply
+MAT=lv5.mat
+NTEX=2
+TEX[0]=floortex.tim
+TEX[1]=walltex.tim

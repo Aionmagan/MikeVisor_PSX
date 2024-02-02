@@ -1,0 +1,5 @@
+@RSD940102
+PLY=chari.ply
+MAT=chari.mat
+NTEX=1
+TEX[0]=player.tim

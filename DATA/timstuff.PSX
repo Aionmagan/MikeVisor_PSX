@@ -1,0 +1,10 @@
+[TIM Files]
+File_0=C:\Documents and Settings\NetYaroze\Desktop\NY-demos\3DEngine\DATA\disabled.TIM
+File_1=C:\Documents and Settings\NetYaroze\Desktop\NY-demos\3DEngine\DATA\enabled.tim
+File_2=C:\Documents and Settings\NetYaroze\Desktop\NY-demos\3DEngine\DATA\enemy.TIM
+File_3=C:\Documents and Settings\NetYaroze\Desktop\NY-demos\3DEngine\DATA\floortex.tim
+File_4=C:\Documents and Settings\NetYaroze\Desktop\NY-demos\3DEngine\DATA\PLAYER.TIM
+File_5=C:\Documents and Settings\NetYaroze\Desktop\NY-demos\3DEngine\DATA\WALLTEX.TIM
+[Graphics Mode]
+Width=320
+Height=240

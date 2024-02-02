@@ -1,0 +1,199 @@
+Starting diaena 64 1  
+Converting RSD to TMD. 
+c:\psx\psx\bin\rsdlink.exe -v -s 64 -o diaenaU.TMD diaena.rsd 
+[0] =============== RSD ==============
+   RSD files   : C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\diaena.ply, diaena.mat, (null)
+	TEX[0] = enabled.tim
+   POLYGON     :     8
+   VERTEX      :     6
+   NORMAL      :    14
+   MATERIAL    :     8
+   Scale       :    64
+   Range       : (-129, -258, -129)-(129, 1, 129)
+================= TMD ==================
+   Output TMD  : diaenaU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+   Primitives  :     8 (   192 bytes)
+                     8	... Flat Textured Triangles
+   Vertices    :     6 (    48 bytes)
+   Normals     :    14 (   112 bytes)
+----------------------------------------
+Total file size:           392 bytes
+c:\psx\psx\bin\tmdsort.exe  -o diaenaU.TMD  diaenaU.TMD  
+ ------------------------------------------------------------
+   Output TMD  : diaena.TMD
+   Objects     :     1
+   Primitives  :     8
+                     8	... Flat Textured Triangles
+Packing TMD and TIM to create PCK 
+YARDATA.PCK
+DIAENAU.TMD
+        1 file(s) copied
+YARDATA.PCK
+C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\ENABLED.TIM
+        1 file(s) copied
+Creating yaroze siocons batch YARBATCH.SIO 
+c:\psx\psx\bin\dload.exe -nYARDATA.PCK -a80100000 
+Loading program. 
+---- YARBATCH.SIO ---- 
+local dload  YARDATA.PCK 80100000 
+local load  c:\psx\psx\bin\rsdview 
+go 
+---- YARBATCH.SIO ---- 
+yarexe YARBATCH.SIO 
+
+YAREXE - v3 Sept 2022 - CodeWarrior and included Libps.exe
+Net Yaroze batch combiner and PS-X EXE patcher
+argv[0]=yarexe
+argv[1]=YARBATCH.SIO
+
+Output: psx.exe built correctly!
+	Input RSDs      : 1 object(s)
+		RSD[ 0] = "diaena"
+	Total primitives:     8
+	Total vertices  :     6
+	Total normals   :    14
+ --------------------< diaena >--------------------
+= [  0] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,     -4,      0) (#1)
+	Vert-1: (    -2,     -2,     -2) (#2)
+	Vert-2: (    -2,     -2,      2) (#3)
+	Norm-0: ( -2896,  -2896,      0) (#6)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  1] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,     -4,      0) (#1)
+	Vert-1: (    -2,     -2,      2) (#3)
+	Vert-2: (     2,     -2,      2) (#4)
+	Norm-0: (     0,  -2896,   2896) (#7)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  2] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,     -4,      0) (#1)
+	Vert-1: (     2,     -2,      2) (#4)
+	Vert-2: (     2,     -2,     -2) (#5)
+	Norm-0: (  2896,  -2896,      0) (#8)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  3] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,     -4,      0) (#1)
+	Vert-1: (     2,     -2,     -2) (#5)
+	Vert-2: (    -2,     -2,     -2) (#2)
+	Norm-0: (     0,  -2896,  -2896) (#9)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  4] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,     -2,      2) (#3)
+	Vert-1: (     0,      0,      0) (#0)
+	Vert-2: (     2,     -2,      2) (#4)
+	Norm-0: (     0,   2896,   2896) (#10)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  5] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,     -2,     -2) (#2)
+	Vert-1: (     0,      0,      0) (#0)
+	Vert-2: (    -2,     -2,      2) (#3)
+	Norm-0: ( -2896,   2896,      0) (#11)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  6] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     2,     -2,      2) (#4)
+	Vert-1: (     0,      0,      0) (#0)
+	Vert-2: (     2,     -2,     -2) (#5)
+	Norm-0: (  2896,   2896,      0) (#12)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  7] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     2,     -2,     -2) (#5)
+	Vert-1: (     0,      0,      0) (#0)
+	Vert-2: (    -2,     -2,     -2) (#2)
+	Norm-0: (     0,   2896,  -2896) (#13)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+ ------------------------------------------------------------
+   TMD file    : diaenaU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+ ----------< Object 0, 8 packets >----------
+= [  0] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,   -258,      0) (#1)
+	Vert-1: (  -129,   -129,   -129) (#2)
+	Vert-2: (  -129,   -129,    129) (#3)
+	Norm-0: ( -2896,  -2896,      0) (#6)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  1] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,   -258,      0) (#1)
+	Vert-1: (  -129,   -129,    129) (#3)
+	Vert-2: (   129,   -129,    129) (#4)
+	Norm-0: (     0,  -2896,   2896) (#7)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  2] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,   -258,      0) (#1)
+	Vert-1: (   129,   -129,    129) (#4)
+	Vert-2: (   129,   -129,   -129) (#5)
+	Norm-0: (  2896,  -2896,      0) (#8)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  3] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,   -258,      0) (#1)
+	Vert-1: (   129,   -129,   -129) (#5)
+	Vert-2: (  -129,   -129,   -129) (#2)
+	Norm-0: (     0,  -2896,  -2896) (#9)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  4] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -129,   -129,    129) (#3)
+	Vert-1: (     0,      1,      0) (#0)
+	Vert-2: (   129,   -129,    129) (#4)
+	Norm-0: (     0,   2896,   2896) (#10)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  5] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -129,   -129,   -129) (#2)
+	Vert-1: (     0,      1,      0) (#0)
+	Vert-2: (  -129,   -129,    129) (#3)
+	Norm-0: ( -2896,   2896,      0) (#11)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  6] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   129,   -129,    129) (#4)
+	Vert-1: (     0,      1,      0) (#0)
+	Vert-2: (   129,   -129,   -129) (#5)
+	Norm-0: (  2896,   2896,      0) (#12)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  7] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   129,   -129,   -129) (#5)
+	Vert-1: (     0,      1,      0) (#0)
+	Vert-2: (  -129,   -129,   -129) (#2)
+	Norm-0: (     0,   2896,  -2896) (#13)
+	UV 0-2: (  0 127) ( 63  64) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+ ------------------------------------------------------------
+   Primitives  :     8 (   192 bytes)
+                     8	... Flat Textured Triangles
+   Vertices    :     6 (    48 bytes)
+   Range       :       (-129, -258, -129)-(129, 1, 129)
+   Normals     :    14 (   112 bytes)
+ ------------------------------------------------------------
+Total file size:           392 bytes
+ no$psx diaena.EXE 

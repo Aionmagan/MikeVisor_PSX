@@ -1,0 +1,323 @@
+Starting clear 256 1  
+Converting RSD to TMD. 
+c:\psx\psx\bin\rsdlink.exe -v -s 256 -o clearU.TMD clear.rsd 
+[0] =============== RSD ==============
+   RSD files   : C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\clear.ply, clear.mat, (null)
+	TEX[0] = enabled.tim
+   POLYGON     :    14
+   VERTEX      :    24
+   NORMAL      :    38
+   MATERIAL    :    14
+   Scale       :   256
+   Range       : (-191, -740, -191)-(191, -20, 191)
+================= TMD ==================
+   Output TMD  : clearU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+   Primitives  :    14 (   448 bytes)
+                    14	... Flat Textured Quadrangles
+   Vertices    :    24 (   192 bytes)
+   Normals     :    38 (   304 bytes)
+----------------------------------------
+Total file size:           984 bytes
+c:\psx\psx\bin\tmdsort.exe  -o clearU.TMD  clearU.TMD  
+ ------------------------------------------------------------
+   Output TMD  : clear.TMD
+   Objects     :     1
+   Primitives  :    14
+                    14	... Flat Textured Quadrangles
+Packing TMD and TIM to create PCK 
+YARDATA.PCK
+CLEARU.TMD
+        1 file(s) copied
+YARDATA.PCK
+C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\ENABLED.TIM
+        1 file(s) copied
+Creating yaroze siocons batch YARBATCH.SIO 
+c:\psx\psx\bin\dload.exe -nYARDATA.PCK -a80100000 
+Loading program. 
+---- YARBATCH.SIO ---- 
+local dload  YARDATA.PCK 80100000 
+local load  c:\psx\psx\bin\rsdview 
+go 
+---- YARBATCH.SIO ---- 
+yarexe YARBATCH.SIO 
+
+YAREXE - v3 Sept 2022 - CodeWarrior and included Libps.exe
+Net Yaroze batch combiner and PS-X EXE patcher
+argv[0]=yarexe
+argv[1]=YARBATCH.SIO
+
+Output: psx.exe built correctly!
+	Input RSDs      : 1 object(s)
+		RSD[ 0] = "clear"
+	Total primitives:    14
+	Total vertices  :    24
+	Total normals   :    38
+ --------------------< clear >--------------------
+= [  0] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -3,      0) (#3)
+	Vert-1: (     0,     -3,      0) (#1)
+	Vert-2: (     0,      0,      0) (#2)
+	Vert-3: (     0,      0,      0) (#0)
+	Norm-0: ( -4080,    365,      0) (#24)
+	UV 0-3: ( 63 127) (  0 127) ( 63  64) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  1] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,      0,      0) (#2)
+	Vert-1: (     0,      0,      0) (#6)
+	Vert-2: (     0,     -3,      0) (#3)
+	Vert-3: (     0,     -3,      0) (#7)
+	Norm-0: (     0,    365,   4080) (#25)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  2] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,      0,      0) (#6)
+	Vert-1: (     0,      0,      0) (#4)
+	Vert-2: (     0,     -3,      0) (#7)
+	Vert-3: (     0,     -3,      0) (#5)
+	Norm-0: (  4080,    365,      0) (#26)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  3] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -3,      0) (#1)
+	Vert-1: (     0,     -3,      0) (#5)
+	Vert-2: (     0,      0,      0) (#0)
+	Vert-3: (     0,      0,      0) (#4)
+	Norm-0: (     0,    365,  -4080) (#27)
+	UV 0-3: ( 63 127) (  0 127) ( 63  64) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  4] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,      0,      0) (#4)
+	Vert-1: (     0,      0,      0) (#6)
+	Vert-2: (     0,      0,      0) (#0)
+	Vert-3: (     0,      0,      0) (#2)
+	Norm-0: (     0,   4096,      0) (#28)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  5] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -3,      0) (#1)
+	Vert-1: (     0,     -3,      0) (#3)
+	Vert-2: (     0,     -3,      0) (#5)
+	Vert-3: (     0,     -3,      0) (#7)
+	Norm-0: (     0,  -4096,      0) (#29)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  6] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -1,      0) (#13)
+	Vert-1: (    -1,     -1,      1) (#17)
+	Vert-2: (     0,     -1,      0) (#15)
+	Vert-3: (     1,     -1,      1) (#19)
+	Norm-0: (     0,  -4096,      0) (#30)
+	UV 0-3: ( 12  76) (  0  64) ( 51  76) ( 63  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  7] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -1,      0) (#15)
+	Vert-1: (     1,     -1,      1) (#19)
+	Vert-2: (     0,     -1,      0) (#14)
+	Vert-3: (     1,     -1,     -1) (#18)
+	Norm-0: (     0,  -4096,      0) (#31)
+	UV 0-3: ( 51  76) ( 63  64) ( 51 115) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  8] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -1,      0) (#14)
+	Vert-1: (     1,     -1,     -1) (#18)
+	Vert-2: (     0,     -1,      0) (#12)
+	Vert-3: (    -1,     -1,     -1) (#16)
+	Norm-0: (     0,  -4096,      0) (#32)
+	UV 0-3: ( 51 115) ( 63 127) ( 12 115) (  0 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [  9] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -1,      0) (#12)
+	Vert-1: (    -1,     -1,     -1) (#16)
+	Vert-2: (     0,     -1,      0) (#13)
+	Vert-3: (    -1,     -1,      1) (#17)
+	Norm-0: (     0,  -4096,      0) (#33)
+	UV 0-3: ( 12 115) (  0 127) ( 12  76) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [ 10] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -2,      0) (#9)
+	Vert-1: (    -1,     -2,      1) (#21)
+	Vert-2: (     0,     -2,      0) (#11)
+	Vert-3: (     1,     -2,      1) (#22)
+	Norm-0: (     0,  -4096,      0) (#34)
+	UV 0-3: ( 13  77) (  0  64) ( 50  77) ( 63  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [ 11] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -2,      0) (#11)
+	Vert-1: (     1,     -2,      1) (#22)
+	Vert-2: (     0,     -2,      0) (#10)
+	Vert-3: (     1,     -2,     -1) (#23)
+	Norm-0: (     0,  -4096,      0) (#35)
+	UV 0-3: ( 50  77) ( 63  64) ( 50 114) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [ 12] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -2,      0) (#10)
+	Vert-1: (     1,     -2,     -1) (#23)
+	Vert-2: (     0,     -2,      0) (#8)
+	Vert-3: (    -1,     -2,     -1) (#20)
+	Norm-0: (     0,  -4096,      0) (#36)
+	UV 0-3: ( 50 114) ( 63 127) ( 13 114) (  0 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+= [ 13] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (     0,     -2,      0) (#8)
+	Vert-1: (    -1,     -2,     -1) (#20)
+	Vert-2: (     0,     -2,      0) (#9)
+	Vert-3: (    -1,     -2,      1) (#21)
+	Norm-0: (     0,  -4096,      0) (#37)
+	UV 0-3: ( 13 114) (  0 127) ( 13  77) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13   Texture No. :  0
+ ------------------------------------------------------------
+   TMD file    : clearU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+ ----------< Object 0, 14 packets >----------
+= [  0] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (  -116,   -740,    116) (#3)
+	Vert-1: (  -116,   -740,   -116) (#1)
+	Vert-2: (   -52,    -20,     52) (#2)
+	Vert-3: (   -52,    -20,    -52) (#0)
+	Norm-0: ( -4080,    365,      0) (#24)
+	UV 0-3: ( 63 127) (  0 127) ( 63  64) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  1] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (   -52,    -20,     52) (#2)
+	Vert-1: (    52,    -20,     52) (#6)
+	Vert-2: (  -116,   -740,    116) (#3)
+	Vert-3: (   116,   -740,    116) (#7)
+	Norm-0: (     0,    365,   4080) (#25)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  2] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (    52,    -20,     52) (#6)
+	Vert-1: (    52,    -20,    -52) (#4)
+	Vert-2: (   116,   -740,    116) (#7)
+	Vert-3: (   116,   -740,   -116) (#5)
+	Norm-0: (  4080,    365,      0) (#26)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  3] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (  -116,   -740,   -116) (#1)
+	Vert-1: (   116,   -740,   -116) (#5)
+	Vert-2: (   -52,    -20,    -52) (#0)
+	Vert-3: (    52,    -20,    -52) (#4)
+	Norm-0: (     0,    365,  -4080) (#27)
+	UV 0-3: ( 63 127) (  0 127) ( 63  64) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  4] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (    52,    -20,    -52) (#4)
+	Vert-1: (    52,    -20,     52) (#6)
+	Vert-2: (   -52,    -20,    -52) (#0)
+	Vert-3: (   -52,    -20,     52) (#2)
+	Norm-0: (     0,   4096,      0) (#28)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  5] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (  -116,   -740,   -116) (#1)
+	Vert-1: (  -116,   -740,    116) (#3)
+	Vert-2: (   116,   -740,   -116) (#5)
+	Vert-3: (   116,   -740,    116) (#7)
+	Norm-0: (     0,  -4096,      0) (#29)
+	UV 0-3: (  0  64) ( 63  64) (  0 127) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  6] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (   -89,   -245,     89) (#13)
+	Vert-1: (  -144,   -245,    144) (#17)
+	Vert-2: (    89,   -245,     89) (#15)
+	Vert-3: (   144,   -245,    144) (#19)
+	Norm-0: (     0,  -4096,      0) (#30)
+	UV 0-3: ( 12  76) (  0  64) ( 51  76) ( 63  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  7] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (    89,   -245,     89) (#15)
+	Vert-1: (   144,   -245,    144) (#19)
+	Vert-2: (    89,   -245,    -89) (#14)
+	Vert-3: (   144,   -245,   -144) (#18)
+	Norm-0: (     0,  -4096,      0) (#31)
+	UV 0-3: ( 51  76) ( 63  64) ( 51 115) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  8] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (    89,   -245,    -89) (#14)
+	Vert-1: (   144,   -245,   -144) (#18)
+	Vert-2: (   -89,   -245,    -89) (#12)
+	Vert-3: (  -144,   -245,   -144) (#16)
+	Norm-0: (     0,  -4096,      0) (#32)
+	UV 0-3: ( 51 115) ( 63 127) ( 12 115) (  0 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [  9] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (   -89,   -245,    -89) (#12)
+	Vert-1: (  -144,   -245,   -144) (#16)
+	Vert-2: (   -89,   -245,     89) (#13)
+	Vert-3: (  -144,   -245,    144) (#17)
+	Norm-0: (     0,  -4096,      0) (#33)
+	UV 0-3: ( 12 115) (  0 127) ( 12  76) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [ 10] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (  -110,   -498,    110) (#9)
+	Vert-1: (  -191,   -498,    191) (#21)
+	Vert-2: (   110,   -498,    110) (#11)
+	Vert-3: (   191,   -498,    191) (#22)
+	Norm-0: (     0,  -4096,      0) (#34)
+	UV 0-3: ( 13  77) (  0  64) ( 50  77) ( 63  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [ 11] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (   110,   -498,    110) (#11)
+	Vert-1: (   191,   -498,    191) (#22)
+	Vert-2: (   110,   -498,   -110) (#10)
+	Vert-3: (   191,   -498,   -191) (#23)
+	Norm-0: (     0,  -4096,      0) (#35)
+	UV 0-3: ( 50  77) ( 63  64) ( 50 114) ( 63 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [ 12] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (   110,   -498,   -110) (#10)
+	Vert-1: (   191,   -498,   -191) (#23)
+	Vert-2: (  -110,   -498,   -110) (#8)
+	Vert-3: (  -191,   -498,   -191) (#20)
+	Norm-0: (     0,  -4096,      0) (#36)
+	UV 0-3: ( 50 114) ( 63 127) ( 13 114) (  0 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+= [ 13] FLAT TEX 4-POLY(0x2c000709) LIGHT: ON =
+	Vert-0: (  -110,   -498,   -110) (#8)
+	Vert-1: (  -191,   -498,   -191) (#20)
+	Vert-2: (  -110,   -498,    110) (#9)
+	Vert-3: (  -191,   -498,    191) (#21)
+	Norm-0: (     0,  -4096,      0) (#37)
+	UV 0-3: ( 13 114) (  0 127) ( 13  77) (  0  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 261)
+	Texture Page: 13  (x y)=(832 0)
+ ------------------------------------------------------------
+   Primitives  :    14 (   448 bytes)
+                    14	... Flat Textured Quadrangles
+   Vertices    :    24 (   192 bytes)
+   Range       :       (-191, -740, -191)-(191, -20, 191)
+   Normals     :    38 (   304 bytes)
+ ------------------------------------------------------------
+Total file size:           984 bytes
+ no$psx clear.EXE 

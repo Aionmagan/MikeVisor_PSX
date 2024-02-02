@@ -1,0 +1,5 @@
+@RSD940102
+PLY=mike.ply
+MAT=mike.mat
+NTEX=1
+TEX[0]=player.tim

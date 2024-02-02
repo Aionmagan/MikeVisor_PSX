@@ -1,0 +1,215 @@
+Starting enemy 128 1  
+Converting RSD to TMD. 
+c:\psx\psx\bin\rsdlink.exe -v -s 128 -o enemyU.TMD enemy.rsd 
+[0] =============== RSD ==============
+   RSD files   : C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\enemy.ply, enemy.mat, (null)
+	TEX[0] = oppo.tim
+   POLYGON     :     9
+   VERTEX      :    16
+   NORMAL      :    25
+   MATERIAL    :     9
+   Scale       :   128
+   Range       : (-226, -567, -235)-(128, 0, 161)
+================= TMD ==================
+   Output TMD  : enemyU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+   Primitives  :     9 (   216 bytes)
+                     9	... Flat Textured Triangles
+   Vertices    :    16 (   128 bytes)
+   Normals     :    25 (   200 bytes)
+----------------------------------------
+Total file size:           584 bytes
+c:\psx\psx\bin\tmdsort.exe  -o enemyU.TMD  enemyU.TMD  
+ ------------------------------------------------------------
+   Output TMD  : enemy.TMD
+   Objects     :     1
+   Primitives  :     9
+                     9	... Flat Textured Triangles
+Packing TMD and TIM to create PCK 
+YARDATA.PCK
+ENEMYU.TMD
+        1 file(s) copied
+YARDATA.PCK
+C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\OPPO.TIM
+        1 file(s) copied
+Creating yaroze siocons batch YARBATCH.SIO 
+c:\psx\psx\bin\dload.exe -nYARDATA.PCK -a80100000 
+Loading program. 
+---- YARBATCH.SIO ---- 
+local dload  YARDATA.PCK 80100000 
+local load  c:\psx\psx\bin\rsdview 
+go 
+---- YARBATCH.SIO ---- 
+yarexe YARBATCH.SIO 
+
+YAREXE - v3 Sept 2022 - CodeWarrior and included Libps.exe
+Net Yaroze batch combiner and PS-X EXE patcher
+argv[0]=yarexe
+argv[1]=YARBATCH.SIO
+
+Output: psx.exe built correctly!
+	Input RSDs      : 1 object(s)
+		RSD[ 0] = "enemy"
+	Total primitives:     9
+	Total vertices  :    16
+	Total normals   :    25
+ --------------------< enemy >--------------------
+= [  0] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,     -1,      0) (#4)
+	Vert-1: (     0,      0,      0) (#6)
+	Vert-2: (     1,     -1,     -2) (#7)
+	Norm-0: (  3261,  -1923,   1565) (#16)
+	UV 0-2: (127  64) (127 127) ( 64 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  1] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -1) (#0)
+	Vert-1: (     0,     -4,      0) (#3)
+	Vert-2: (     1,      0,      0) (#1)
+	Norm-0: (  2141,   -520,  -3453) (#17)
+	UV 0-2: ( 64 127) ( 64  64) (126 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  2] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      1) (#2)
+	Vert-1: (     0,     -4,      0) (#3)
+	Vert-2: (    -1,      0,     -1) (#0)
+	Norm-0: ( -4066,   -494,      0) (#18)
+	UV 0-2: ( 64 127) ( 64  64) (127 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  3] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      0) (#1)
+	Vert-1: (     0,     -4,      0) (#3)
+	Vert-2: (    -1,      0,      1) (#2)
+	Norm-0: (  2141,   -520,   3453) (#19)
+	UV 0-2: ( 64 127) ( 64  64) (127 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  4] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,     -3,      0) (#8)
+	Vert-1: (     0,     -2,      0) (#10)
+	Vert-2: (     1,     -2,      1) (#11)
+	Norm-0: ( -2748,  -1924,   2350) (#20)
+	UV 0-2: ( 64 127) ( 64  64) (127  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  5] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,     -1,     -2) (#7)
+	Vert-1: (     0,      0,     -1) (#5)
+	Vert-2: (     0,     -1,      0) (#4)
+	Norm-0: ( -3028,  -1027,  -2560) (#21)
+	UV 0-2: ( 64  64) (127  64) (127 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  6] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,     -2,      1) (#11)
+	Vert-1: (     0,     -2,      0) (#9)
+	Vert-2: (     0,     -3,      0) (#8)
+	Norm-0: (  3198,  -1806,  -1813) (#22)
+	UV 0-2: (127  65) ( 64  64) ( 64 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  7] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,     -2,      0) (#12)
+	Vert-1: (    -1,     -1,      0) (#14)
+	Vert-2: (    -2,     -1,      0) (#15)
+	Norm-0: (  -399,  -1883,  -3615) (#23)
+	UV 0-2: (127  65) (127 127) ( 64 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+= [  8] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,     -1,      0) (#15)
+	Vert-1: (    -1,     -1,      0) (#13)
+	Vert-2: (     0,     -2,      0) (#12)
+	Norm-0: (  -859,  -1214,   3816) (#24)
+	UV 0-2: ( 64 127) ( 64  64) (127  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13   Texture No. :  0
+ ------------------------------------------------------------
+   TMD file    : enemyU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+ ----------< Object 0, 9 packets >----------
+= [  0] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,   -164,    -63) (#4)
+	Vert-1: (    53,    -62,    -46) (#6)
+	Vert-2: (   124,    -96,   -235) (#7)
+	Norm-0: (  3261,  -1923,   1565) (#16)
+	UV 0-2: (127  64) (127 127) ( 64 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  1] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   -78,      0,   -128) (#0)
+	Vert-1: (   -10,   -567,      0) (#3)
+	Vert-2: (   128,      0,      0) (#1)
+	Norm-0: (  2141,   -520,  -3453) (#17)
+	UV 0-2: ( 64 127) ( 64  64) (126 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  2] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   -78,      0,    128) (#2)
+	Vert-1: (   -10,   -567,      0) (#3)
+	Vert-2: (   -78,      0,   -128) (#0)
+	Norm-0: ( -4066,   -494,      0) (#18)
+	UV 0-2: ( 64 127) ( 64  64) (127 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  3] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   128,      0,      0) (#1)
+	Vert-1: (   -10,   -567,      0) (#3)
+	Vert-2: (   -78,      0,    128) (#2)
+	Norm-0: (  2141,   -520,   3453) (#19)
+	UV 0-2: ( 64 127) ( 64  64) (127 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  4] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    10,   -344,     27) (#8)
+	Vert-1: (    -6,   -298,     45) (#10)
+	Vert-2: (   104,   -313,    161) (#11)
+	Norm-0: ( -2748,  -1924,   2350) (#20)
+	UV 0-2: ( 64 127) ( 64  64) (127  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  5] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   124,    -96,   -235) (#7)
+	Vert-1: (   -18,    -62,    -82) (#5)
+	Vert-2: (     1,   -164,    -63) (#4)
+	Norm-0: ( -3028,  -1027,  -2560) (#21)
+	UV 0-2: ( 64  64) (127  64) (127 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  6] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   104,   -313,    161) (#11)
+	Vert-1: (    34,   -298,     22) (#9)
+	Vert-2: (    10,   -344,     27) (#8)
+	Norm-0: (  3198,  -1806,  -1813) (#22)
+	UV 0-2: (127  65) ( 64  64) ( 64 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  7] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   -56,   -224,     29) (#12)
+	Vert-1: (   -78,   -122,    -22) (#14)
+	Vert-2: (  -226,   -156,     12) (#15)
+	Norm-0: (  -399,  -1883,  -3615) (#23)
+	UV 0-2: (127  65) (127 127) ( 64 127)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+= [  8] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -226,   -156,     12) (#15)
+	Vert-1: (   -74,   -122,     57) (#13)
+	Vert-2: (   -56,   -224,     29) (#12)
+	Norm-0: (  -859,  -1214,   3816) (#24)
+	UV 0-2: ( 64 127) ( 64  64) (127  64)
+	Pixel mode  : 4bit CLUT : (x y)=(768 264)
+	Texture Page: 13  (x y)=(832 0)
+ ------------------------------------------------------------
+   Primitives  :     9 (   216 bytes)
+                     9	... Flat Textured Triangles
+   Vertices    :    16 (   128 bytes)
+   Range       :       (-226, -567, -235)-(128, 0, 161)
+   Normals     :    25 (   200 bytes)
+ ------------------------------------------------------------
+Total file size:           584 bytes
+ no$psx enemy.EXE 

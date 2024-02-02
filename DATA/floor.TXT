@@ -1,0 +1,1639 @@
+Starting floor 200 1  
+Converting RSD to TMD. 
+c:\psx\psx\bin\rsdlink.exe -v -s 200 -o floorU.TMD floor.rsd 
+[0] =============== RSD ==============
+   RSD files   : C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\floor.ply, floor.mat, (null)
+	TEX[0] = floortex.tim
+   POLYGON     :    98
+   VERTEX      :    77
+   NORMAL      :   175
+   MATERIAL    :    98
+   Scale       :   256
+   Range       : (-754, 0, -2251)-(782, 0, 1845)
+================= TMD ==================
+   Output TMD  : floorU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+   Primitives  :    98 (  2352 bytes)
+                    98	... Flat Textured Triangles
+   Vertices    :    77 (   616 bytes)
+   Normals     :   175 (  1400 bytes)
+----------------------------------------
+Total file size:          4408 bytes
+c:\psx\psx\bin\tmdsort.exe  -o floorU.TMD  floorU.TMD  
+ ------------------------------------------------------------
+   Output TMD  : floor.TMD
+   Objects     :     1
+   Primitives  :    98
+                    98	... Flat Textured Triangles
+Packing TMD and TIM to create PCK 
+YARDATA.PCK
+FLOORU.TMD
+        1 file(s) copied
+YARDATA.PCK
+C:\DOCUME~1\NETYAR~1\DESKTOP\NY-DEMOS\3DENGINE\DATA\FLOORTEX.TIM
+        1 file(s) copied
+Creating yaroze siocons batch YARBATCH.SIO 
+c:\psx\psx\bin\dload.exe -nYARDATA.PCK -a80100000 
+Loading program. 
+---- YARBATCH.SIO ---- 
+local dload  YARDATA.PCK 80100000 
+local load  c:\psx\psx\bin\rsdview 
+go 
+---- YARBATCH.SIO ---- 
+yarexe YARBATCH.SIO 
+
+YAREXE - v3 Sept 2022 - CodeWarrior and included Libps.exe
+Net Yaroze batch combiner and PS-X EXE patcher
+argv[0]=yarexe
+argv[1]=YARBATCH.SIO
+
+Output: psx.exe built correctly!
+	Input RSDs      : 1 object(s)
+		RSD[ 0] = "floor"
+	Total primitives:    98
+	Total vertices  :    77
+	Total normals   :   175
+ --------------------< floor >--------------------
+= [  0] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      6) (#36)
+	Vert-1: (    -2,      0,      5) (#1)
+	Vert-2: (    -2,      0,      6) (#38)
+	Norm-0: (     0,  -4096,      0) (#77)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  1] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -3,      0,      6) (#39)
+	Vert-1: (    -2,      0,      7) (#42)
+	Vert-2: (    -2,      0,      6) (#38)
+	Norm-0: (     0,  -4096,      0) (#78)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  2] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      6) (#36)
+	Vert-1: (    -2,      0,      7) (#42)
+	Vert-2: (    -1,      0,      7) (#41)
+	Norm-0: (     0,  -4096,      0) (#79)
+	UV 0-2: (  0   0) ( 63  63) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  3] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      6) (#35)
+	Vert-1: (    -1,      0,      7) (#41)
+	Vert-2: (     0,      0,      7) (#40)
+	Norm-0: (     0,  -4096,      0) (#80)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  4] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      7) (#40)
+	Vert-1: (     1,      0,      6) (#44)
+	Vert-2: (     0,      0,      6) (#35)
+	Norm-0: (     0,  -4096,      0) (#81)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  5] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -6) (#26)
+	Vert-1: (    -2,      0,     -7) (#70)
+	Vert-2: (    -2,      0,     -6) (#69)
+	Norm-0: (     0,  -4096,      0) (#82)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  6] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      6) (#44)
+	Vert-1: (     2,      0,      7) (#47)
+	Vert-2: (     2,      0,      6) (#46)
+	Norm-0: (     0,  -4096,      0) (#83)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  7] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      5) (#3)
+	Vert-1: (     2,      0,      6) (#46)
+	Vert-2: (     2,      0,      5) (#4)
+	Norm-0: (     0,  -4096,      0) (#84)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  8] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     2,      0,      6) (#46)
+	Vert-1: (     3,      0,      7) (#49)
+	Vert-2: (     3,      0,      6) (#48)
+	Norm-0: (     0,  -4096,      0) (#85)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [  9] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      5) (#37)
+	Vert-1: (     1,      0,      4) (#7)
+	Vert-2: (     0,      0,      4) (#50)
+	Norm-0: (     0,  -4096,      0) (#86)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 10] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,      6) (#38)
+	Vert-1: (    -3,      0,      5) (#2)
+	Vert-2: (    -3,      0,      6) (#39)
+	Norm-0: (     0,  -4096,      0) (#87)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 11] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -4) (#58)
+	Vert-1: (     1,      0,     -5) (#25)
+	Vert-2: (     0,      0,     -5) (#59)
+	Norm-0: (     0,  -4096,      0) (#88)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 12] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      4) (#6)
+	Vert-1: (     0,      0,      3) (#51)
+	Vert-2: (    -1,      0,      3) (#8)
+	Norm-0: (     0,  -4096,      0) (#89)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 13] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      3) (#51)
+	Vert-1: (     1,      0,      2) (#11)
+	Vert-2: (     0,      0,      2) (#52)
+	Norm-0: (     0,  -4096,      0) (#90)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 14] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      3) (#8)
+	Vert-1: (     0,      0,      2) (#52)
+	Vert-2: (    -1,      0,      2) (#10)
+	Norm-0: (     0,  -4096,      0) (#91)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 15] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      2) (#52)
+	Vert-1: (     1,      0,      1) (#13)
+	Vert-2: (     0,      0,      1) (#53)
+	Norm-0: (     0,  -4096,      0) (#92)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 16] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      2) (#10)
+	Vert-1: (     0,      0,      1) (#53)
+	Vert-2: (    -1,      0,      1) (#12)
+	Norm-0: (     0,  -4096,      0) (#93)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 17] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      1) (#53)
+	Vert-1: (     1,      0,      0) (#15)
+	Vert-2: (     0,      0,      0) (#54)
+	Norm-0: (     0,  -4096,      0) (#94)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 18] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      5) (#0)
+	Vert-1: (     0,      0,      4) (#50)
+	Vert-2: (    -1,      0,      4) (#6)
+	Norm-0: (     0,  -4096,      0) (#95)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 19] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      0) (#54)
+	Vert-1: (     1,      0,     -1) (#17)
+	Vert-2: (     0,      0,     -1) (#55)
+	Norm-0: (     0,  -4096,      0) (#96)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 20] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      0) (#14)
+	Vert-1: (     0,      0,     -1) (#55)
+	Vert-2: (    -1,      0,     -1) (#16)
+	Norm-0: (     0,  -4096,      0) (#97)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 21] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -1) (#55)
+	Vert-1: (     1,      0,     -2) (#19)
+	Vert-2: (     0,      0,     -2) (#56)
+	Norm-0: (     0,  -4096,      0) (#98)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 22] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -1) (#16)
+	Vert-1: (     0,      0,     -2) (#56)
+	Vert-2: (    -1,      0,     -2) (#18)
+	Norm-0: (     0,  -4096,      0) (#99)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 23] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -2) (#56)
+	Vert-1: (     1,      0,     -3) (#21)
+	Vert-2: (     0,      0,     -3) (#57)
+	Norm-0: (     0,  -4096,      0) (#100)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 24] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -2) (#18)
+	Vert-1: (     0,      0,     -3) (#57)
+	Vert-2: (    -1,      0,     -3) (#20)
+	Norm-0: (     0,  -4096,      0) (#101)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 25] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -3) (#20)
+	Vert-1: (     0,      0,     -4) (#58)
+	Vert-2: (    -1,      0,     -4) (#22)
+	Norm-0: (     0,  -4096,      0) (#102)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 26] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -7) (#61)
+	Vert-1: (     1,      0,     -8) (#65)
+	Vert-2: (     0,      0,     -8) (#63)
+	Norm-0: (     0,  -4096,      0) (#103)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 27] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -4) (#22)
+	Vert-1: (     0,      0,     -5) (#59)
+	Vert-2: (    -1,      0,     -5) (#24)
+	Norm-0: (     0,  -4096,      0) (#104)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 28] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -6) (#26)
+	Vert-1: (     0,      0,     -7) (#61)
+	Vert-2: (    -1,      0,     -7) (#62)
+	Norm-0: (     0,  -4096,      0) (#105)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 29] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      1) (#12)
+	Vert-1: (     0,      0,      0) (#54)
+	Vert-2: (    -1,      0,      0) (#14)
+	Norm-0: (     0,  -4096,      0) (#106)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 30] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -6) (#60)
+	Vert-1: (     1,      0,     -7) (#28)
+	Vert-2: (     0,      0,     -7) (#61)
+	Norm-0: (     0,  -4096,      0) (#107)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 31] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -5) (#24)
+	Vert-1: (     0,      0,     -6) (#60)
+	Vert-2: (    -1,      0,     -6) (#26)
+	Norm-0: (     0,  -4096,      0) (#108)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 32] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      0) (#14)
+	Vert-1: (    -2,      0,     -1) (#32)
+	Vert-2: (    -2,      0,      0) (#31)
+	Norm-0: (     0,  -4096,      0) (#109)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 33] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -7) (#62)
+	Vert-1: (     0,      0,     -8) (#63)
+	Vert-2: (    -1,      0,     -8) (#64)
+	Norm-0: (     0,  -4096,      0) (#110)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 34] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -8) (#63)
+	Vert-1: (     1,      0,     -9) (#68)
+	Vert-2: (     0,      0,     -9) (#66)
+	Norm-0: (     0,  -4096,      0) (#111)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 35] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -8) (#64)
+	Vert-1: (     0,      0,     -9) (#66)
+	Vert-2: (    -1,      0,     -9) (#67)
+	Norm-0: (     0,  -4096,      0) (#112)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 36] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -9) (#67)
+	Vert-1: (    -2,      0,     -8) (#71)
+	Vert-2: (    -1,      0,     -8) (#64)
+	Norm-0: (     0,  -4096,      0) (#113)
+	UV 0-2: (  0   0) ( 63  63) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 37] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -7) (#62)
+	Vert-1: (    -2,      0,     -8) (#71)
+	Vert-2: (    -2,      0,     -7) (#70)
+	Norm-0: (     0,  -4096,      0) (#114)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 38] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      6) (#36)
+	Vert-1: (     0,      0,      5) (#37)
+	Vert-2: (    -1,      0,      5) (#0)
+	Norm-0: (     0,  -4096,      0) (#115)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 39] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,     -8) (#71)
+	Vert-1: (    -3,      0,     -9) (#76)
+	Vert-2: (    -3,      0,     -8) (#75)
+	Norm-0: (     0,  -4096,      0) (#116)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 40] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,     -7) (#70)
+	Vert-1: (    -3,      0,     -8) (#75)
+	Vert-2: (    -3,      0,     -7) (#74)
+	Norm-0: (     0,  -4096,      0) (#117)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 41] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,     -6) (#69)
+	Vert-1: (    -3,      0,     -7) (#74)
+	Vert-2: (    -3,      0,     -6) (#73)
+	Norm-0: (     0,  -4096,      0) (#118)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 42] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      2) (#11)
+	Vert-1: (     2,      0,      3) (#29)
+	Vert-2: (     2,      0,      2) (#30)
+	Norm-0: (     0,  -4096,      0) (#119)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 43] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      5) (#37)
+	Vert-1: (     1,      0,      6) (#44)
+	Vert-2: (     1,      0,      5) (#3)
+	Norm-0: (     0,  -4096,      0) (#120)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 44] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     2,      0,      5) (#4)
+	Vert-1: (     3,      0,      6) (#48)
+	Vert-2: (     3,      0,      5) (#5)
+	Norm-0: (     0,  -4096,      0) (#121)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 45] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      4) (#50)
+	Vert-1: (     1,      0,      3) (#9)
+	Vert-2: (     0,      0,      3) (#51)
+	Norm-0: (     0,  -4096,      0) (#122)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 46] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -4) (#23)
+	Vert-1: (     2,      0,     -3) (#33)
+	Vert-2: (     2,      0,     -4) (#34)
+	Norm-0: (     0,  -4096,      0) (#123)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 47] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -3) (#57)
+	Vert-1: (     1,      0,     -4) (#23)
+	Vert-2: (     0,      0,     -4) (#58)
+	Norm-0: (     0,  -4096,      0) (#124)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 48] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -5) (#59)
+	Vert-1: (     1,      0,     -6) (#27)
+	Vert-2: (     0,      0,     -6) (#60)
+	Norm-0: (     0,  -4096,      0) (#125)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 49] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      5) (#0)
+	Vert-1: (    -2,      0,      5) (#1)
+	Vert-2: (    -1,      0,      6) (#36)
+	Norm-0: (     0,  -4096,      0) (#126)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 50] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -3,      0,      7) (#43)
+	Vert-1: (    -2,      0,      7) (#42)
+	Vert-2: (    -3,      0,      6) (#39)
+	Norm-0: (     0,  -4096,      0) (#127)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 51] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,      6) (#38)
+	Vert-1: (    -2,      0,      7) (#42)
+	Vert-2: (    -1,      0,      6) (#36)
+	Norm-0: (     0,  -4096,      0) (#128)
+	UV 0-2: ( 63   0) ( 63  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 52] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,      6) (#36)
+	Vert-1: (    -1,      0,      7) (#41)
+	Vert-2: (     0,      0,      6) (#35)
+	Norm-0: (     0,  -4096,      0) (#129)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 53] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      7) (#45)
+	Vert-1: (     1,      0,      6) (#44)
+	Vert-2: (     0,      0,      7) (#40)
+	Norm-0: (     0,  -4096,      0) (#130)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 54] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -7) (#62)
+	Vert-1: (    -2,      0,     -7) (#70)
+	Vert-2: (    -1,      0,     -6) (#26)
+	Norm-0: (     0,  -4096,      0) (#131)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 55] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      7) (#45)
+	Vert-1: (     2,      0,      7) (#47)
+	Vert-2: (     1,      0,      6) (#44)
+	Norm-0: (     0,  -4096,      0) (#132)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 56] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      6) (#44)
+	Vert-1: (     2,      0,      6) (#46)
+	Vert-2: (     1,      0,      5) (#3)
+	Norm-0: (     0,  -4096,      0) (#133)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 57] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     2,      0,      7) (#47)
+	Vert-1: (     3,      0,      7) (#49)
+	Vert-2: (     2,      0,      6) (#46)
+	Norm-0: (     0,  -4096,      0) (#134)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 58] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      5) (#3)
+	Vert-1: (     1,      0,      4) (#7)
+	Vert-2: (     0,      0,      5) (#37)
+	Norm-0: (     0,  -4096,      0) (#135)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 59] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,      5) (#1)
+	Vert-1: (    -3,      0,      5) (#2)
+	Vert-2: (    -2,      0,      6) (#38)
+	Norm-0: (     0,  -4096,      0) (#136)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 60] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -4) (#23)
+	Vert-1: (     1,      0,     -5) (#25)
+	Vert-2: (     0,      0,     -4) (#58)
+	Norm-0: (     0,  -4096,      0) (#137)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 61] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      4) (#50)
+	Vert-1: (     0,      0,      3) (#51)
+	Vert-2: (    -1,      0,      4) (#6)
+	Norm-0: (     0,  -4096,      0) (#138)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 62] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      3) (#9)
+	Vert-1: (     1,      0,      2) (#11)
+	Vert-2: (     0,      0,      3) (#51)
+	Norm-0: (     0,  -4096,      0) (#139)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 63] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      3) (#51)
+	Vert-1: (     0,      0,      2) (#52)
+	Vert-2: (    -1,      0,      3) (#8)
+	Norm-0: (     0,  -4096,      0) (#140)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 64] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      2) (#11)
+	Vert-1: (     1,      0,      1) (#13)
+	Vert-2: (     0,      0,      2) (#52)
+	Norm-0: (     0,  -4096,      0) (#141)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 65] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      2) (#52)
+	Vert-1: (     0,      0,      1) (#53)
+	Vert-2: (    -1,      0,      2) (#10)
+	Norm-0: (     0,  -4096,      0) (#142)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 66] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      1) (#13)
+	Vert-1: (     1,      0,      0) (#15)
+	Vert-2: (     0,      0,      1) (#53)
+	Norm-0: (     0,  -4096,      0) (#143)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 67] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      5) (#37)
+	Vert-1: (     0,      0,      4) (#50)
+	Vert-2: (    -1,      0,      5) (#0)
+	Norm-0: (     0,  -4096,      0) (#144)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 68] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      0) (#15)
+	Vert-1: (     1,      0,     -1) (#17)
+	Vert-2: (     0,      0,      0) (#54)
+	Norm-0: (     0,  -4096,      0) (#145)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 69] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      0) (#54)
+	Vert-1: (     0,      0,     -1) (#55)
+	Vert-2: (    -1,      0,      0) (#14)
+	Norm-0: (     0,  -4096,      0) (#146)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 70] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -1) (#17)
+	Vert-1: (     1,      0,     -2) (#19)
+	Vert-2: (     0,      0,     -1) (#55)
+	Norm-0: (     0,  -4096,      0) (#147)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 71] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -1) (#55)
+	Vert-1: (     0,      0,     -2) (#56)
+	Vert-2: (    -1,      0,     -1) (#16)
+	Norm-0: (     0,  -4096,      0) (#148)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 72] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -2) (#19)
+	Vert-1: (     1,      0,     -3) (#21)
+	Vert-2: (     0,      0,     -2) (#56)
+	Norm-0: (     0,  -4096,      0) (#149)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 73] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -2) (#56)
+	Vert-1: (     0,      0,     -3) (#57)
+	Vert-2: (    -1,      0,     -2) (#18)
+	Norm-0: (     0,  -4096,      0) (#150)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 74] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -3) (#57)
+	Vert-1: (     0,      0,     -4) (#58)
+	Vert-2: (    -1,      0,     -3) (#20)
+	Norm-0: (     0,  -4096,      0) (#151)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 75] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -7) (#28)
+	Vert-1: (     1,      0,     -8) (#65)
+	Vert-2: (     0,      0,     -7) (#61)
+	Norm-0: (     0,  -4096,      0) (#152)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 76] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -4) (#58)
+	Vert-1: (     0,      0,     -5) (#59)
+	Vert-2: (    -1,      0,     -4) (#22)
+	Norm-0: (     0,  -4096,      0) (#153)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 77] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -6) (#60)
+	Vert-1: (     0,      0,     -7) (#61)
+	Vert-2: (    -1,      0,     -6) (#26)
+	Norm-0: (     0,  -4096,      0) (#154)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 78] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      1) (#53)
+	Vert-1: (     0,      0,      0) (#54)
+	Vert-2: (    -1,      0,      1) (#12)
+	Norm-0: (     0,  -4096,      0) (#155)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 79] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -6) (#27)
+	Vert-1: (     1,      0,     -7) (#28)
+	Vert-2: (     0,      0,     -6) (#60)
+	Norm-0: (     0,  -4096,      0) (#156)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 80] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -5) (#59)
+	Vert-1: (     0,      0,     -6) (#60)
+	Vert-2: (    -1,      0,     -5) (#24)
+	Norm-0: (     0,  -4096,      0) (#157)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 81] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -1) (#16)
+	Vert-1: (    -2,      0,     -1) (#32)
+	Vert-2: (    -1,      0,      0) (#14)
+	Norm-0: (     0,  -4096,      0) (#158)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 82] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -7) (#61)
+	Vert-1: (     0,      0,     -8) (#63)
+	Vert-2: (    -1,      0,     -7) (#62)
+	Norm-0: (     0,  -4096,      0) (#159)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 83] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -8) (#65)
+	Vert-1: (     1,      0,     -9) (#68)
+	Vert-2: (     0,      0,     -8) (#63)
+	Norm-0: (     0,  -4096,      0) (#160)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 84] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,     -8) (#63)
+	Vert-1: (     0,      0,     -9) (#66)
+	Vert-2: (    -1,      0,     -8) (#64)
+	Norm-0: (     0,  -4096,      0) (#161)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 85] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,     -9) (#72)
+	Vert-1: (    -2,      0,     -8) (#71)
+	Vert-2: (    -1,      0,     -9) (#67)
+	Norm-0: (     0,  -4096,      0) (#162)
+	UV 0-2: ( 63   0) ( 63  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 86] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -1,      0,     -8) (#64)
+	Vert-1: (    -2,      0,     -8) (#71)
+	Vert-2: (    -1,      0,     -7) (#62)
+	Norm-0: (     0,  -4096,      0) (#163)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 87] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      6) (#35)
+	Vert-1: (     0,      0,      5) (#37)
+	Vert-2: (    -1,      0,      6) (#36)
+	Norm-0: (     0,  -4096,      0) (#164)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 88] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,     -9) (#72)
+	Vert-1: (    -3,      0,     -9) (#76)
+	Vert-2: (    -2,      0,     -8) (#71)
+	Norm-0: (     0,  -4096,      0) (#165)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 89] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,     -8) (#71)
+	Vert-1: (    -3,      0,     -8) (#75)
+	Vert-2: (    -2,      0,     -7) (#70)
+	Norm-0: (     0,  -4096,      0) (#166)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 90] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    -2,      0,     -7) (#70)
+	Vert-1: (    -3,      0,     -7) (#74)
+	Vert-2: (    -2,      0,     -6) (#69)
+	Norm-0: (     0,  -4096,      0) (#167)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 91] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      3) (#9)
+	Vert-1: (     2,      0,      3) (#29)
+	Vert-2: (     1,      0,      2) (#11)
+	Norm-0: (     0,  -4096,      0) (#168)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 92] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     0,      0,      6) (#35)
+	Vert-1: (     1,      0,      6) (#44)
+	Vert-2: (     0,      0,      5) (#37)
+	Norm-0: (     0,  -4096,      0) (#169)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 93] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     2,      0,      6) (#46)
+	Vert-1: (     3,      0,      6) (#48)
+	Vert-2: (     2,      0,      5) (#4)
+	Norm-0: (     0,  -4096,      0) (#170)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 94] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,      4) (#7)
+	Vert-1: (     1,      0,      3) (#9)
+	Vert-2: (     0,      0,      4) (#50)
+	Norm-0: (     0,  -4096,      0) (#171)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 95] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -3) (#21)
+	Vert-1: (     2,      0,     -3) (#33)
+	Vert-2: (     1,      0,     -4) (#23)
+	Norm-0: (     0,  -4096,      0) (#172)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 96] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -3) (#21)
+	Vert-1: (     1,      0,     -4) (#23)
+	Vert-2: (     0,      0,     -3) (#57)
+	Norm-0: (     0,  -4096,      0) (#173)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+= [ 97] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (     1,      0,     -5) (#25)
+	Vert-1: (     1,      0,     -6) (#27)
+	Vert-2: (     0,      0,     -5) (#59)
+	Norm-0: (     0,  -4096,      0) (#174)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14   Texture No. :  0
+ ------------------------------------------------------------
+   TMD file    : floorU.TMD
+   TMD header  :       (    12 bytes)
+   Objects     :     1 (    28 bytes)
+ ----------< Object 0, 98 packets >----------
+= [  0] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   1589) (#36)
+	Vert-1: (  -498,      0,   1333) (#1)
+	Vert-2: (  -498,      0,   1589) (#38)
+	Norm-0: (     0,  -4096,      0) (#77)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  1] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -754,      0,   1589) (#39)
+	Vert-1: (  -498,      0,   1845) (#42)
+	Vert-2: (  -498,      0,   1589) (#38)
+	Norm-0: (     0,  -4096,      0) (#78)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  2] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   1589) (#36)
+	Vert-1: (  -498,      0,   1845) (#42)
+	Vert-2: (  -242,      0,   1845) (#41)
+	Norm-0: (     0,  -4096,      0) (#79)
+	UV 0-2: (  0   0) ( 63  63) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  3] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1589) (#35)
+	Vert-1: (  -242,      0,   1845) (#41)
+	Vert-2: (    14,      0,   1845) (#40)
+	Norm-0: (     0,  -4096,      0) (#80)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  4] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1845) (#40)
+	Vert-1: (   270,      0,   1589) (#44)
+	Vert-2: (    14,      0,   1589) (#35)
+	Norm-0: (     0,  -4096,      0) (#81)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  5] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1483) (#26)
+	Vert-1: (  -498,      0,  -1739) (#70)
+	Vert-2: (  -498,      0,  -1483) (#69)
+	Norm-0: (     0,  -4096,      0) (#82)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  6] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   1589) (#44)
+	Vert-1: (   526,      0,   1845) (#47)
+	Vert-2: (   526,      0,   1589) (#46)
+	Norm-0: (     0,  -4096,      0) (#83)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  7] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   1333) (#3)
+	Vert-1: (   526,      0,   1589) (#46)
+	Vert-2: (   526,      0,   1333) (#4)
+	Norm-0: (     0,  -4096,      0) (#84)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  8] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   526,      0,   1589) (#46)
+	Vert-1: (   782,      0,   1845) (#49)
+	Vert-2: (   782,      0,   1589) (#48)
+	Norm-0: (     0,  -4096,      0) (#85)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [  9] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1333) (#37)
+	Vert-1: (   270,      0,   1077) (#7)
+	Vert-2: (    14,      0,   1077) (#50)
+	Norm-0: (     0,  -4096,      0) (#86)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 10] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,   1589) (#38)
+	Vert-1: (  -754,      0,   1333) (#2)
+	Vert-2: (  -754,      0,   1589) (#39)
+	Norm-0: (     0,  -4096,      0) (#87)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 11] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -971) (#58)
+	Vert-1: (   270,      0,  -1227) (#25)
+	Vert-2: (    14,      0,  -1227) (#59)
+	Norm-0: (     0,  -4096,      0) (#88)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 12] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   1077) (#6)
+	Vert-1: (    14,      0,    821) (#51)
+	Vert-2: (  -242,      0,    821) (#8)
+	Norm-0: (     0,  -4096,      0) (#89)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 13] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,    821) (#51)
+	Vert-1: (   270,      0,    565) (#11)
+	Vert-2: (    14,      0,    565) (#52)
+	Norm-0: (     0,  -4096,      0) (#90)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 14] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,    821) (#8)
+	Vert-1: (    14,      0,    565) (#52)
+	Vert-2: (  -242,      0,    565) (#10)
+	Norm-0: (     0,  -4096,      0) (#91)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 15] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,    565) (#52)
+	Vert-1: (   270,      0,    309) (#13)
+	Vert-2: (    14,      0,    309) (#53)
+	Norm-0: (     0,  -4096,      0) (#92)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 16] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,    565) (#10)
+	Vert-1: (    14,      0,    309) (#53)
+	Vert-2: (  -242,      0,    309) (#12)
+	Norm-0: (     0,  -4096,      0) (#93)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 17] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,    309) (#53)
+	Vert-1: (   270,      0,     53) (#15)
+	Vert-2: (    14,      0,     53) (#54)
+	Norm-0: (     0,  -4096,      0) (#94)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 18] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   1333) (#0)
+	Vert-1: (    14,      0,   1077) (#50)
+	Vert-2: (  -242,      0,   1077) (#6)
+	Norm-0: (     0,  -4096,      0) (#95)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 19] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,     53) (#54)
+	Vert-1: (   270,      0,   -203) (#17)
+	Vert-2: (    14,      0,   -203) (#55)
+	Norm-0: (     0,  -4096,      0) (#96)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 20] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,     53) (#14)
+	Vert-1: (    14,      0,   -203) (#55)
+	Vert-2: (  -242,      0,   -203) (#16)
+	Norm-0: (     0,  -4096,      0) (#97)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 21] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -203) (#55)
+	Vert-1: (   270,      0,   -459) (#19)
+	Vert-2: (    14,      0,   -459) (#56)
+	Norm-0: (     0,  -4096,      0) (#98)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 22] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   -203) (#16)
+	Vert-1: (    14,      0,   -459) (#56)
+	Vert-2: (  -242,      0,   -459) (#18)
+	Norm-0: (     0,  -4096,      0) (#99)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 23] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -459) (#56)
+	Vert-1: (   270,      0,   -715) (#21)
+	Vert-2: (    14,      0,   -715) (#57)
+	Norm-0: (     0,  -4096,      0) (#100)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 24] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   -459) (#18)
+	Vert-1: (    14,      0,   -715) (#57)
+	Vert-2: (  -242,      0,   -715) (#20)
+	Norm-0: (     0,  -4096,      0) (#101)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 25] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   -715) (#20)
+	Vert-1: (    14,      0,   -971) (#58)
+	Vert-2: (  -242,      0,   -971) (#22)
+	Norm-0: (     0,  -4096,      0) (#102)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 26] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1739) (#61)
+	Vert-1: (   270,      0,  -1995) (#65)
+	Vert-2: (    14,      0,  -1995) (#63)
+	Norm-0: (     0,  -4096,      0) (#103)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 27] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   -971) (#22)
+	Vert-1: (    14,      0,  -1227) (#59)
+	Vert-2: (  -242,      0,  -1227) (#24)
+	Norm-0: (     0,  -4096,      0) (#104)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 28] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1483) (#26)
+	Vert-1: (    14,      0,  -1739) (#61)
+	Vert-2: (  -242,      0,  -1739) (#62)
+	Norm-0: (     0,  -4096,      0) (#105)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 29] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,    309) (#12)
+	Vert-1: (    14,      0,     53) (#54)
+	Vert-2: (  -242,      0,     53) (#14)
+	Norm-0: (     0,  -4096,      0) (#106)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 30] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1483) (#60)
+	Vert-1: (   270,      0,  -1739) (#28)
+	Vert-2: (    14,      0,  -1739) (#61)
+	Norm-0: (     0,  -4096,      0) (#107)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 31] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1227) (#24)
+	Vert-1: (    14,      0,  -1483) (#60)
+	Vert-2: (  -242,      0,  -1483) (#26)
+	Norm-0: (     0,  -4096,      0) (#108)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 32] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,     53) (#14)
+	Vert-1: (  -498,      0,   -203) (#32)
+	Vert-2: (  -498,      0,     53) (#31)
+	Norm-0: (     0,  -4096,      0) (#109)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 33] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1739) (#62)
+	Vert-1: (    14,      0,  -1995) (#63)
+	Vert-2: (  -242,      0,  -1995) (#64)
+	Norm-0: (     0,  -4096,      0) (#110)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 34] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1995) (#63)
+	Vert-1: (   270,      0,  -2251) (#68)
+	Vert-2: (    14,      0,  -2251) (#66)
+	Norm-0: (     0,  -4096,      0) (#111)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 35] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1995) (#64)
+	Vert-1: (    14,      0,  -2251) (#66)
+	Vert-2: (  -242,      0,  -2251) (#67)
+	Norm-0: (     0,  -4096,      0) (#112)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 36] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -2251) (#67)
+	Vert-1: (  -498,      0,  -1995) (#71)
+	Vert-2: (  -242,      0,  -1995) (#64)
+	Norm-0: (     0,  -4096,      0) (#113)
+	UV 0-2: (  0   0) ( 63  63) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 37] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1739) (#62)
+	Vert-1: (  -498,      0,  -1995) (#71)
+	Vert-2: (  -498,      0,  -1739) (#70)
+	Norm-0: (     0,  -4096,      0) (#114)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 38] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   1589) (#36)
+	Vert-1: (    14,      0,   1333) (#37)
+	Vert-2: (  -242,      0,   1333) (#0)
+	Norm-0: (     0,  -4096,      0) (#115)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 39] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,  -1995) (#71)
+	Vert-1: (  -754,      0,  -2251) (#76)
+	Vert-2: (  -754,      0,  -1995) (#75)
+	Norm-0: (     0,  -4096,      0) (#116)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 40] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,  -1739) (#70)
+	Vert-1: (  -754,      0,  -1995) (#75)
+	Vert-2: (  -754,      0,  -1739) (#74)
+	Norm-0: (     0,  -4096,      0) (#117)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 41] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,  -1483) (#69)
+	Vert-1: (  -754,      0,  -1739) (#74)
+	Vert-2: (  -754,      0,  -1483) (#73)
+	Norm-0: (     0,  -4096,      0) (#118)
+	UV 0-2: (  0  63) ( 63   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 42] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,    565) (#11)
+	Vert-1: (   526,      0,    821) (#29)
+	Vert-2: (   526,      0,    565) (#30)
+	Norm-0: (     0,  -4096,      0) (#119)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 43] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1333) (#37)
+	Vert-1: (   270,      0,   1589) (#44)
+	Vert-2: (   270,      0,   1333) (#3)
+	Norm-0: (     0,  -4096,      0) (#120)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 44] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   526,      0,   1333) (#4)
+	Vert-1: (   782,      0,   1589) (#48)
+	Vert-2: (   782,      0,   1333) (#5)
+	Norm-0: (     0,  -4096,      0) (#121)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 45] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1077) (#50)
+	Vert-1: (   270,      0,    821) (#9)
+	Vert-2: (    14,      0,    821) (#51)
+	Norm-0: (     0,  -4096,      0) (#122)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 46] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   -971) (#23)
+	Vert-1: (   526,      0,   -715) (#33)
+	Vert-2: (   526,      0,   -971) (#34)
+	Norm-0: (     0,  -4096,      0) (#123)
+	UV 0-2: ( 63   0) (  0  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 47] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -715) (#57)
+	Vert-1: (   270,      0,   -971) (#23)
+	Vert-2: (    14,      0,   -971) (#58)
+	Norm-0: (     0,  -4096,      0) (#124)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 48] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1227) (#59)
+	Vert-1: (   270,      0,  -1483) (#27)
+	Vert-2: (    14,      0,  -1483) (#60)
+	Norm-0: (     0,  -4096,      0) (#125)
+	UV 0-2: ( 63  63) (  0   0) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 49] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   1333) (#0)
+	Vert-1: (  -498,      0,   1333) (#1)
+	Vert-2: (  -242,      0,   1589) (#36)
+	Norm-0: (     0,  -4096,      0) (#126)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 50] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -754,      0,   1845) (#43)
+	Vert-1: (  -498,      0,   1845) (#42)
+	Vert-2: (  -754,      0,   1589) (#39)
+	Norm-0: (     0,  -4096,      0) (#127)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 51] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,   1589) (#38)
+	Vert-1: (  -498,      0,   1845) (#42)
+	Vert-2: (  -242,      0,   1589) (#36)
+	Norm-0: (     0,  -4096,      0) (#128)
+	UV 0-2: ( 63   0) ( 63  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 52] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   1589) (#36)
+	Vert-1: (  -242,      0,   1845) (#41)
+	Vert-2: (    14,      0,   1589) (#35)
+	Norm-0: (     0,  -4096,      0) (#129)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 53] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   1845) (#45)
+	Vert-1: (   270,      0,   1589) (#44)
+	Vert-2: (    14,      0,   1845) (#40)
+	Norm-0: (     0,  -4096,      0) (#130)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 54] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1739) (#62)
+	Vert-1: (  -498,      0,  -1739) (#70)
+	Vert-2: (  -242,      0,  -1483) (#26)
+	Norm-0: (     0,  -4096,      0) (#131)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 55] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   1845) (#45)
+	Vert-1: (   526,      0,   1845) (#47)
+	Vert-2: (   270,      0,   1589) (#44)
+	Norm-0: (     0,  -4096,      0) (#132)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 56] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   1589) (#44)
+	Vert-1: (   526,      0,   1589) (#46)
+	Vert-2: (   270,      0,   1333) (#3)
+	Norm-0: (     0,  -4096,      0) (#133)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 57] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   526,      0,   1845) (#47)
+	Vert-1: (   782,      0,   1845) (#49)
+	Vert-2: (   526,      0,   1589) (#46)
+	Norm-0: (     0,  -4096,      0) (#134)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 58] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   1333) (#3)
+	Vert-1: (   270,      0,   1077) (#7)
+	Vert-2: (    14,      0,   1333) (#37)
+	Norm-0: (     0,  -4096,      0) (#135)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 59] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,   1333) (#1)
+	Vert-1: (  -754,      0,   1333) (#2)
+	Vert-2: (  -498,      0,   1589) (#38)
+	Norm-0: (     0,  -4096,      0) (#136)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 60] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   -971) (#23)
+	Vert-1: (   270,      0,  -1227) (#25)
+	Vert-2: (    14,      0,   -971) (#58)
+	Norm-0: (     0,  -4096,      0) (#137)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 61] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1077) (#50)
+	Vert-1: (    14,      0,    821) (#51)
+	Vert-2: (  -242,      0,   1077) (#6)
+	Norm-0: (     0,  -4096,      0) (#138)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 62] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,    821) (#9)
+	Vert-1: (   270,      0,    565) (#11)
+	Vert-2: (    14,      0,    821) (#51)
+	Norm-0: (     0,  -4096,      0) (#139)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 63] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,    821) (#51)
+	Vert-1: (    14,      0,    565) (#52)
+	Vert-2: (  -242,      0,    821) (#8)
+	Norm-0: (     0,  -4096,      0) (#140)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 64] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,    565) (#11)
+	Vert-1: (   270,      0,    309) (#13)
+	Vert-2: (    14,      0,    565) (#52)
+	Norm-0: (     0,  -4096,      0) (#141)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 65] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,    565) (#52)
+	Vert-1: (    14,      0,    309) (#53)
+	Vert-2: (  -242,      0,    565) (#10)
+	Norm-0: (     0,  -4096,      0) (#142)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 66] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,    309) (#13)
+	Vert-1: (   270,      0,     53) (#15)
+	Vert-2: (    14,      0,    309) (#53)
+	Norm-0: (     0,  -4096,      0) (#143)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 67] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1333) (#37)
+	Vert-1: (    14,      0,   1077) (#50)
+	Vert-2: (  -242,      0,   1333) (#0)
+	Norm-0: (     0,  -4096,      0) (#144)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 68] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,     53) (#15)
+	Vert-1: (   270,      0,   -203) (#17)
+	Vert-2: (    14,      0,     53) (#54)
+	Norm-0: (     0,  -4096,      0) (#145)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 69] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,     53) (#54)
+	Vert-1: (    14,      0,   -203) (#55)
+	Vert-2: (  -242,      0,     53) (#14)
+	Norm-0: (     0,  -4096,      0) (#146)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 70] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   -203) (#17)
+	Vert-1: (   270,      0,   -459) (#19)
+	Vert-2: (    14,      0,   -203) (#55)
+	Norm-0: (     0,  -4096,      0) (#147)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 71] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -203) (#55)
+	Vert-1: (    14,      0,   -459) (#56)
+	Vert-2: (  -242,      0,   -203) (#16)
+	Norm-0: (     0,  -4096,      0) (#148)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 72] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   -459) (#19)
+	Vert-1: (   270,      0,   -715) (#21)
+	Vert-2: (    14,      0,   -459) (#56)
+	Norm-0: (     0,  -4096,      0) (#149)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 73] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -459) (#56)
+	Vert-1: (    14,      0,   -715) (#57)
+	Vert-2: (  -242,      0,   -459) (#18)
+	Norm-0: (     0,  -4096,      0) (#150)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 74] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -715) (#57)
+	Vert-1: (    14,      0,   -971) (#58)
+	Vert-2: (  -242,      0,   -715) (#20)
+	Norm-0: (     0,  -4096,      0) (#151)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 75] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,  -1739) (#28)
+	Vert-1: (   270,      0,  -1995) (#65)
+	Vert-2: (    14,      0,  -1739) (#61)
+	Norm-0: (     0,  -4096,      0) (#152)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 76] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   -971) (#58)
+	Vert-1: (    14,      0,  -1227) (#59)
+	Vert-2: (  -242,      0,   -971) (#22)
+	Norm-0: (     0,  -4096,      0) (#153)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 77] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1483) (#60)
+	Vert-1: (    14,      0,  -1739) (#61)
+	Vert-2: (  -242,      0,  -1483) (#26)
+	Norm-0: (     0,  -4096,      0) (#154)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 78] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,    309) (#53)
+	Vert-1: (    14,      0,     53) (#54)
+	Vert-2: (  -242,      0,    309) (#12)
+	Norm-0: (     0,  -4096,      0) (#155)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 79] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,  -1483) (#27)
+	Vert-1: (   270,      0,  -1739) (#28)
+	Vert-2: (    14,      0,  -1483) (#60)
+	Norm-0: (     0,  -4096,      0) (#156)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 80] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1227) (#59)
+	Vert-1: (    14,      0,  -1483) (#60)
+	Vert-2: (  -242,      0,  -1227) (#24)
+	Norm-0: (     0,  -4096,      0) (#157)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 81] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,   -203) (#16)
+	Vert-1: (  -498,      0,   -203) (#32)
+	Vert-2: (  -242,      0,     53) (#14)
+	Norm-0: (     0,  -4096,      0) (#158)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 82] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1739) (#61)
+	Vert-1: (    14,      0,  -1995) (#63)
+	Vert-2: (  -242,      0,  -1739) (#62)
+	Norm-0: (     0,  -4096,      0) (#159)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 83] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,  -1995) (#65)
+	Vert-1: (   270,      0,  -2251) (#68)
+	Vert-2: (    14,      0,  -1995) (#63)
+	Norm-0: (     0,  -4096,      0) (#160)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 84] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,  -1995) (#63)
+	Vert-1: (    14,      0,  -2251) (#66)
+	Vert-2: (  -242,      0,  -1995) (#64)
+	Norm-0: (     0,  -4096,      0) (#161)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 85] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,  -2251) (#72)
+	Vert-1: (  -498,      0,  -1995) (#71)
+	Vert-2: (  -242,      0,  -2251) (#67)
+	Norm-0: (     0,  -4096,      0) (#162)
+	UV 0-2: ( 63   0) ( 63  63) (  0   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 86] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -242,      0,  -1995) (#64)
+	Vert-1: (  -498,      0,  -1995) (#71)
+	Vert-2: (  -242,      0,  -1739) (#62)
+	Norm-0: (     0,  -4096,      0) (#163)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 87] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1589) (#35)
+	Vert-1: (    14,      0,   1333) (#37)
+	Vert-2: (  -242,      0,   1589) (#36)
+	Norm-0: (     0,  -4096,      0) (#164)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 88] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,  -2251) (#72)
+	Vert-1: (  -754,      0,  -2251) (#76)
+	Vert-2: (  -498,      0,  -1995) (#71)
+	Norm-0: (     0,  -4096,      0) (#165)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 89] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,  -1995) (#71)
+	Vert-1: (  -754,      0,  -1995) (#75)
+	Vert-2: (  -498,      0,  -1739) (#70)
+	Norm-0: (     0,  -4096,      0) (#166)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 90] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (  -498,      0,  -1739) (#70)
+	Vert-1: (  -754,      0,  -1739) (#74)
+	Vert-2: (  -498,      0,  -1483) (#69)
+	Norm-0: (     0,  -4096,      0) (#167)
+	UV 0-2: (  0   0) ( 63   0) (  0  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 91] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,    821) (#9)
+	Vert-1: (   526,      0,    821) (#29)
+	Vert-2: (   270,      0,    565) (#11)
+	Norm-0: (     0,  -4096,      0) (#168)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 92] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (    14,      0,   1589) (#35)
+	Vert-1: (   270,      0,   1589) (#44)
+	Vert-2: (    14,      0,   1333) (#37)
+	Norm-0: (     0,  -4096,      0) (#169)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 93] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   526,      0,   1589) (#46)
+	Vert-1: (   782,      0,   1589) (#48)
+	Vert-2: (   526,      0,   1333) (#4)
+	Norm-0: (     0,  -4096,      0) (#170)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 94] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   1077) (#7)
+	Vert-1: (   270,      0,    821) (#9)
+	Vert-2: (    14,      0,   1077) (#50)
+	Norm-0: (     0,  -4096,      0) (#171)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 95] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   -715) (#21)
+	Vert-1: (   526,      0,   -715) (#33)
+	Vert-2: (   270,      0,   -971) (#23)
+	Norm-0: (     0,  -4096,      0) (#172)
+	UV 0-2: ( 63  63) (  0  63) ( 63   0)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 96] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,   -715) (#21)
+	Vert-1: (   270,      0,   -971) (#23)
+	Vert-2: (    14,      0,   -715) (#57)
+	Norm-0: (     0,  -4096,      0) (#173)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+= [ 97] FLAT TEX 3-POLY(0x24000507) LIGHT: ON =
+	Vert-0: (   270,      0,  -1227) (#25)
+	Vert-1: (   270,      0,  -1483) (#27)
+	Vert-2: (    14,      0,  -1227) (#59)
+	Norm-0: (     0,  -4096,      0) (#174)
+	UV 0-2: (  0  63) (  0   0) ( 63  63)
+	Pixel mode  : 16bit
+	Texture Page: 14  (x y)=(896 0)
+ ------------------------------------------------------------
+   Primitives  :    98 (  2352 bytes)
+                    98	... Flat Textured Triangles
+   Vertices    :    77 (   616 bytes)
+   Range       :       (-754, 0, -2251)-(782, 0, 1845)
+   Normals     :   175 (  1400 bytes)
+ ------------------------------------------------------------
+Total file size:          4408 bytes
+ no$psx floor.EXE 

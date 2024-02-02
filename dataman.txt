@@ -1,0 +1,61 @@
+output = data
+
+start_address = 80090000
+
+data = DATA/lv0.tmd
+data = DATA/lv1.tmd
+data = DATA/lv2.tmd
+data = DATA/lv3.tmd
+data = DATA/lv4.tmd
+data = DATA/lv5.tmd
+data = DATA/lv6.tmd
+data = DATA/lv7.tmd
+data = DATA/lv8.tmd
+
+#canned due to memory limits
+#data = DATA/lv9.tmd
+
+data = DATA/enemy.tmd
+data = DATA/clear.tmd
+data = DATA/diadis.tmd
+data = DATA/diaena.tmd
+
+data = DATA/chari.tmd
+data = DATA/charr1.tmd
+data = DATA/charr2.tmd
+data = DATA/charr3.tmd
+data = DATA/charr4.tmd
+data = DATA/charr5.tmd
+data = DATA/charr6.tmd
+data = DATA/charr7.tmd
+data = DATA/charr8.tmd
+data = DATA/charr9.tmd
+data = DATA/charr10.tmd
+data = DATA/charr11.tmd
+data = DATA/charr12.tmd
+
+
+#put all tim under floortex
+data = DATA/floortex.tim
+data = DATA/player.tim
+data = DATA/oppo.tim
+data = DATA/walltex.tim
+data = DATA/disabled.tim
+data = DATA/enabled.tim
+data = DATA/credits.tim
+
+data = DATA/C.SEQ
+data = DATA/midivb.vb
+data = DATA/midivh.vh
+
+data = DATA/ny_title.tim
+
+string = 0 .h "#define ~LABEL (u_long *)0x~ADDRESS"
+
+#Finish off the .mak file with the program load
+path=
+string=1 .mak "local load ~FILE"
+data=main.exe
+
+#Print "Go" into the .mak file
+print 1 =go
