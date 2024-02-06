@@ -12,6 +12,10 @@
 
 #include <libps.h>
 
+#define CLUT_4 0
+#define CLUT_8 1
+#define CLUT_NONE 2
+
 static u_long pmode_tex;
 
 typedef struct
@@ -50,7 +54,7 @@ void obj_init    (obj_t* o);
 void aobj_init   (aobj_t* a);
 void load_texture(long addr);
 void load_model  (obj_t* o, unsigned long* addr);
-void load_sprite (GsSPRITE* sprite, unsigned long* addr);
+void load_sprite (GsSPRITE* sprite, unsigned long* addr, int clut_flag);
 /*direct loading*/
 void dload_model (GsDOBJ2* handle, GsCOORDINATE2* coord, unsigned long* addr);
 inline void aobj_anim(aobj_t* a, u_short start_frame, u_short frame_limit, u_short slowness);

@@ -1,3 +1,0 @@
-local dload  YARDATA.PCK 80100000 
-local load  c:\psx\psx\bin\rsdview 
-go 

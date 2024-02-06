@@ -11,9 +11,7 @@ data = DATA/lv5.tmd
 data = DATA/lv6.tmd
 data = DATA/lv7.tmd
 data = DATA/lv8.tmd
-
-#canned due to memory limits
-#data = DATA/lv9.tmd
+data = DATA/lv9.tmd
 
 data = DATA/enemy.tmd
 data = DATA/clear.tmd

@@ -1,6 +1,7 @@
 CC=gcc
 CFLAGS	= -Wall -O2 -S
-LINKER  = -Xlinker -Ttext -Xlinker 80100000
+#LINKER  = -Xlinker -Ttext -Xlinker 80100000
+LINKER  = -Xlinker -Ttext -Xlinker 8010FF40
 
 HEADER  = DATA.H
 PROG	= main.exe

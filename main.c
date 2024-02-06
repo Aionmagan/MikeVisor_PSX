@@ -33,10 +33,19 @@ void intro_screen()
 	short istimer = 0;
 	short stoptimer = 0;
 	short move = 0;
-	load_sprite(&logo, (long*)NY_TITLE_DATA);
+	load_sprite(&logo, (long*)NY_TITLE_DATA, CLUT_8);
 
 	logo.scalex = ONE>>1;
 	logo.scaley = ONE>>1;
+
+	while(0)
+	{
+		logo.scalex = ONE-(1024+450);
+		logo.scaley = ONE;
+		render_begin();
+		render_dsprite(&logo);
+		render_end();
+	}
 
 	logo.r = 0;
 	logo.g = 0;
@@ -46,14 +55,14 @@ void intro_screen()
 	{
 		if(logo.r > 80 && move == 0)
 		{
-			logo.scalex = ONE+1024;
-			logo.scaley = ONE+128;
+			logo.scalex = ONE-1474;
+			logo.scaley = ONE;
 			logo.rotate = 0;
 
 			if (stoptimer < render_tick())
 			{
 				move = 1;
-				logo.scalex =
+				logo.scalex = ONE-(1474+2048);
 				logo.scaley = ONE-2048;
 			}
 		}else
@@ -272,27 +281,30 @@ void load_level(obj_t* o, int i)
 		enemy_set_actives(3);
 		player_placement(0, 0, 1800);
 		break;
-	/*case 9 : CANNED FOR MEMORY LIMITS (UNFINISHED AND BROKEN)
+	case 9 : //CANNED FOR MEMORY LIMITS (UNFINISHED AND BROKEN)
 		load_model(o, (long*)LV9_DATA);
-		clear_placement(0, 0, 1800);
-		crystals_placement(0,  750, 0,  1850, 2);
-		crystals_placement(1, -750, 0,  1850, 1);
-		crystals_placement(2,  750, 0, -1750, 3);
-		crystals_placement(3, -750, 0, -1750, 0);
+		clear_placement(-750, 0, -1750);
+		crystals_placement(0,  1800,  -609, -1800, 2);
+		crystals_placement(1,  1800, -1526,  1800, 1);
+		crystals_placement(2, -1800, -2442,  1800, 3);
+		crystals_placement(3, -1800, -3359, -1800, 0);
 		crystals_set_actives(4);
-		enemy_set_node(0,  0,  800,  -154,    0);
-		enemy_set_node(0,  1, -800,  -154,    0);
-		enemy_set_node(1,  0,  800,  -154,  850);
-		enemy_set_node(1,  1,  800,  -154, -850);
-		enemy_set_node(2,  0, -800,  -154, -850);
-		enemy_set_node(2,  1, -800,  -154,  850);
-		enemy_placement(0, 0,  800,  -154,    0);
-		enemy_placement(1, 1,  800,  -154,  -850);
-		enemy_placement(2, 0, -800,  -154, -850);
-		enemy_set_actives(3);
-		player_placement(0, 0, 1800);
-		break;*/
-	case 9 :
+		enemy_set_node(0,  0,  2600,   -609, -1800);
+		enemy_set_node(0,  1,  1800,   -609, -1800);
+		enemy_set_node(1,  0,  1800,  -1526,  2600);
+		enemy_set_node(1,  1,  1800,  -1526,  1800);
+		enemy_set_node(2,  0, -1800,  -2442,  1800);
+		enemy_set_node(2,  1, -2600,  -2442,  1800);
+		enemy_set_node(3,  0, -1800,  -3359, -2310);
+		enemy_set_node(3,  1, -1800,  -3359, -1800);
+		enemy_placement(0, 0,  2600,   -609, -1800);
+		enemy_placement(1, 0,  1800,  -1526,  2600);
+		enemy_placement(2, 0, -1800,  -2442,  1800);
+		enemy_placement(3, 0, -1800,  -3359, -2310);
+		enemy_set_actives(4);
+		player_placement(-750, 0, -1750);
+		break;
+	case 10 :
 		audio_stop(0);
 		credit_screen();
 		audio_play(0, -1);
@@ -321,7 +333,7 @@ int main(int argc, char** argv)
     load_texture(ENABLED_DATA);
 	load_texture(PLAYER_DATA);
 	load_texture(OPPO_DATA);
-	load_sprite(&credits, (long*)CREDITS_DATA);
+	load_sprite(&credits, (long*)CREDITS_DATA, CLUT_4);
 	credits.scalex = ONE + ONE;
 	credits.scaley = ONE + ONE;
 
@@ -347,7 +359,7 @@ int main(int argc, char** argv)
 	FntLoad(960, 256);
 	FntOpen(-96, -96, 192, 192, 0, 512);
 
-	load_level(&lvl, 0);
+	load_level(&lvl, lvl_select);
 	audio_play(0, -1);
 
 	while(q)
@@ -372,7 +384,7 @@ int main(int argc, char** argv)
 			if (clear_checked())
 			{
 				audio_sfx_play(3, 48, 127);
-				lvl_select = (lvl_select+1)%10;
+				lvl_select = (lvl_select+1)%11;
 				load_level(&lvl, lvl_select);
 			}
 			/*play collected all crystal sounds*/

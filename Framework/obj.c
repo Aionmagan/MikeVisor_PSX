@@ -85,7 +85,7 @@ void load_model(obj_t* o, unsigned long* addr)
 	GsLinkObject4(addr, &o->gsObjectHandler, 0);
 }
 
-void load_sprite (GsSPRITE* sprite, unsigned long* addr)
+void load_sprite (GsSPRITE* sprite, unsigned long* addr, int clut_flag)
 {
 	GsIMAGE img;
 	RECT rect = {0};
@@ -102,7 +102,7 @@ void load_sprite (GsSPRITE* sprite, unsigned long* addr)
 	//testSprite.attribute |= (1<<30);
 	//testSprite.attribute |= (1<<29);
 	sprite->attribute = 0;
-	sprite->attribute |= (0<<24);
+	sprite->attribute |= (clut_flag<<24);
 	sprite->w = img.pw*4;
 	sprite->h = img.ph;
 	sprite->tpage = GetTPage(0, 0, img.px, img.py);

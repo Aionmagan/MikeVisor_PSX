@@ -21,6 +21,7 @@
 #include "lv6_col.c"
 #include "lv7_col.c"
 #include "lv8_col.c"
+#include "lv9_col.c"
 
 #define PLY_ANIM_AMOUNT 13
 #define PLY_MAXSPEED 32
@@ -34,6 +35,7 @@ short       camrot = 0;
 short       btnpres[4]={0};
 int         is_dead = 0;
 int         plyr_speed = 32;
+long        plyr_height;
 VECTOR      plyr_sca = {128, 128, 128};
 VECTOR      last_pos;
 VECTOR      placement;
@@ -184,6 +186,11 @@ void player_on_level(short lvl)
 			lvl_faces = lv8_col_faces;
 			lvl_count = LV8_COL_FACE_COUNT;
 			break;
+		case 9:
+			lvl_verts = lv9_col_vert;
+			lvl_faces = lv9_col_faces;
+			lvl_count = LV9_COL_FACE_COUNT;
+			break;
 		default:break;
 	}
 }
@@ -277,10 +284,10 @@ inline void player_update()
 		mesh_collision(&player.transform.pos.vy, &cpoints[3], lvl_verts, lvl_faces, lvl_count))
 	{
 		//FntPrint("INSIDE MESH\n");
-
+		plyr_height = player.transform.pos.vy;
 	}else
 	{
-		if (player.transform.pos.vy > 600)
+		if (player.transform.pos.vy > plyr_height+600)
 			is_dead = 1;
 	}
 
